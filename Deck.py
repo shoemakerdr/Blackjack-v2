@@ -1,3 +1,12 @@
+############################################################################################################
+# * imports are generally frowned upon because you're introducing everything from a module into scope,
+# which you normally don't want to do. Usually, you want to only import the things you need:
+# EXAMPLE:
+#   from Card import Card, rank, suit
+#
+# Additionally, you probably want to name your files in lowercase. I believe that's considered "more 
+# pythonic".
+############################################################################################################
 from Card import *
 
 class Deck:

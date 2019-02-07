@@ -62,6 +62,10 @@ class Player:
         print(player_hand.hand)
         print('Total: {}'.format(player_hand.hand_value))
 
+    ############################################################################################################
+    # Seems like there's a bunch of stuff in here that may belong in the Game class. Generally, you want a
+    # method/function to do ONE thing
+    ############################################################################################################
     def player_turn(self,deck,hand):
         first_turn = True
         turn = True

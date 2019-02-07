@@ -1,8 +1,12 @@
+
+############################################################################################################
+# You should probably move these into  the Card class as constants
+############################################################################################################
 ranks = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7, 'Eight': 8, 'Nine': 9, 'Ten': 10,
          'Jack': 10, 'Queen': 10, 'King': 10, 'Ace': 11}
 suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
 
-import random
+import random  # unused import
 
 class Card:
     """Card class that holds a card with a rank and a suit"""
@@ -16,5 +20,8 @@ class Card:
     def __str__(self):
         return (str(self.rank)+' of '+self.suit)
 
+############################################################################################################
+# You should probably create a separate directory for your tests, so you can run them easily
+############################################################################################################
 #test_card = Card('Two','Hearts')
 #print(test_card.card_value())
